@@ -1,0 +1,119 @@
+.containerDetails {
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.header {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: #f2c66f;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.cardDetails {
+    background-color: rgb(206 218 252);
+    border-radius: 15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 2rem;
+}
+
+.card-tit {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(67 86 186);
+    padding-left: 1rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    padding-left: 3rem;
+}
+
+.card-text h5 {
+    color: black;
+}
+
+.listAc {
+    color: black;
+    font-size: 1.3rem;
+
+}
+
+.barra {
+    height: 5px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+
+/*Responsive*/
+@media (max-width: 320px) {
+    .containerDetails {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .header {
+        margin: 1rem 0.5rem;
+        color: #f2c66f;
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardDetails {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    .card-tit {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .cardDetails {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    .card-tit {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+    .cardDetails {
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+}

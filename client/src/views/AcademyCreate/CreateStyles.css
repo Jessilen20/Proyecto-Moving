@@ -1,0 +1,240 @@
+.containerCreate {
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: left;
+}
+
+.titleCreate {
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.formC {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 2fr, 1fr;
+    align-content: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+}
+
+.formc-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.formc-item2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.formc-item5 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.titulo {
+    color: #2a4674;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+}
+
+.item5check {
+    display: flex;
+}
+
+.formC .item5check label {
+    font-weight: 500;
+    color: black;
+    margin-left: 1rem;
+}
+
+.formC .item5check input {
+    width: 18px;
+    padding: 5px;
+}
+
+.formC label {
+    width: 80%;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    color: #2a4674;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+}
+
+.formC input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #2a4674;
+    border-radius: 5px;
+}
+
+.estiloCreate-error {
+    color: red;
+}
+
+.itemButton {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.botonCrear {
+    border-radius: 10px;
+    color: #2372f0;
+    background-color: rgb(242, 198, 111);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 48px;
+    width: 280px;
+    border: none;
+}
+
+/*Responsive*/
+@media (max-width: 320px) {
+
+    .containerCreate {
+        width: 100%;
+    }
+
+    .formC {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .formC label {
+        width: 80%;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        color: #2a4674;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .formC input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    .formC .item5check input {
+        width: 16px;
+        padding: 4px;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .containerCreate {
+        width: 100%;
+    }
+
+    .formC {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 850px) {
+    .containerCreate {
+        width: 100%;
+    }
+
+    .formC {
+        width: 90%;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .formC label {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        color: #2a4674;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .formC input {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #2a4674;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .containerCreate {
+        width: 95%;
+    }
+
+    .formC {
+        width: 100%;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .formC input {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #2a4674;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 1030px) and (max-width: 1199px) {
+    .containerCreate {
+        width: 95%;
+    }
+
+    .formC {
+        width: 90%;
+        border-radius: 10px;
+        padding: 1.5rem;
+        grid-column-gap: 1rem;
+    }
+
+    .formC input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .containerCreate {
+        width: 95%;
+    }
+
+    .formC {
+        width: 80%;
+        border-radius: 10px;
+        padding: 1.5rem;
+        grid-column-gap: 1rem;
+    }
+}
